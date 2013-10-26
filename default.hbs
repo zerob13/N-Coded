@@ -16,14 +16,13 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/lightbox.css"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/prettify.css"/>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}}" onload="prettyPrint()">
+<body class="{{body_class}}">
 
     {{! Modified: The big featured header on the homepage, with the site logo and description }}
     <header id="site-head">
@@ -60,7 +59,7 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="/assets/js/index.js"></script>
     <script type="text/javascript" src="/assets/js/click.js"></script>
-    <script type="text/javascript" src="/assets/js/prettify.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('img').each(function (i) {
