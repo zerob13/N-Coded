@@ -59,16 +59,12 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="/assets/js/index.js"></script>
     <script type="text/javascript" src="/assets/js/click.js"></script>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('img').each(function (i) {
                 if (this.width > 80) { 
                   $(this).wrap("<a href=" + $(this)[0].src + " data-lightbox=\"lightbox\"></a>");
                 }
-            });
-            $('code').each(function (i) {
-                  $(this).wrap("<pre class='prettyprint'></pre>");
             });
         }); 
     </script>
